@@ -1,0 +1,46 @@
+{
+  "run": "fedavg-lora_iid_sev1.0_s0",
+  "device": "cuda",
+  "params": {
+    "total": 21888003,
+    "trainable": 222339
+  },
+  "message_bytes": {
+    "down": 904333,
+    "up": 904333,
+    "raw_down": 889356,
+    "raw_up": 889356
+  },
+  "extra_down_bytes": 0,
+  "client_sizes": [
+    471,
+    471,
+    471,
+    471,
+    471,
+    471,
+    470,
+    470,
+    470,
+    470
+  ],
+  "kl_mean": 0.0020659587630781954,
+  "kl_max": 0.005092155884619094,
+  "rounds_run": 100,
+  "target": null,
+  "rounds_to_target": null,
+  "total_bytes": 1808666000,
+  "test": {
+    "bacc": 0.7749569340478432,
+    "acc": 0.7900641025641025,
+    "f1_macro": 0.7726182811769485,
+    "f1_per_class": [
+      0.8020050125313283,
+      0.8513761467889909,
+      0.6644736842105263
+    ],
+    "auc_macro": 0.937957822522443
+  },
+  "test_loss": 0.6575102806091309,
+  "wall_sec": 995.0
+}

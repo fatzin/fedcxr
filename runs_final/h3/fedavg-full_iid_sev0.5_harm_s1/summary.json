@@ -1,0 +1,46 @@
+{
+  "run": "fedavg-full_iid_sev0.5_harm_s1",
+  "device": "cuda",
+  "params": {
+    "total": 21666819,
+    "trainable": 21666819
+  },
+  "message_bytes": {
+    "down": 86712399,
+    "up": 86712399,
+    "raw_down": 86667276,
+    "raw_up": 86667276
+  },
+  "extra_down_bytes": 26010,
+  "client_sizes": [
+    471,
+    471,
+    471,
+    471,
+    471,
+    471,
+    470,
+    470,
+    470,
+    470
+  ],
+  "kl_mean": 0.0020090492052869725,
+  "kl_max": 0.00680308817795388,
+  "rounds_run": 100,
+  "target": null,
+  "rounds_to_target": null,
+  "total_bytes": 173424824010,
+  "test": {
+    "bacc": 0.736895191440646,
+    "acc": 0.7596153846153846,
+    "f1_macro": 0.7381440120022357,
+    "f1_per_class": [
+      0.7700258397932817,
+      0.8158347676419966,
+      0.6285714285714286
+    ],
+    "auc_macro": 0.9431562752424201
+  },
+  "test_loss": 0.8507310748100281,
+  "wall_sec": 1296.6
+}

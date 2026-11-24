@@ -1,0 +1,46 @@
+{
+  "run": "scaffold-cweighted_dir0.1_s9",
+  "device": "cuda",
+  "params": {
+    "total": 21666819,
+    "trainable": 21666819
+  },
+  "message_bytes": {
+    "down": 173425631,
+    "up": 173425631,
+    "raw_down": 173334552,
+    "raw_up": 173334552
+  },
+  "extra_down_bytes": 0,
+  "client_sizes": [
+    995,
+    51,
+    103,
+    358,
+    50,
+    2569,
+    123,
+    110,
+    294,
+    53
+  ],
+  "kl_mean": 0.8921933164931742,
+  "kl_max": 1.3499874029862358,
+  "rounds_run": 100,
+  "target": null,
+  "rounds_to_target": null,
+  "total_bytes": 346851262000,
+  "test": {
+    "bacc": 0.6596768414950233,
+    "acc": 0.6971153846153846,
+    "f1_macro": 0.6543445988361243,
+    "f1_per_class": [
+      0.7189189189189189,
+      0.8135593220338984,
+      0.4305555555555556
+    ],
+    "auc_macro": 0.9011140860184589
+  },
+  "test_loss": 0.8693315386772156,
+  "wall_sec": 1182.0
+}

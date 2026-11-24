@@ -1,0 +1,46 @@
+# ambientes
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# dados e checkpoints (o Kermany é baixado por scripts/prepare_data.py --download)
+data/
+*.pt
+*.pth
+
+# execuções locais e do Modal (as do artigo ficam em runs_final/, versionadas)
+runs/
+runs_modal/
+runs_smoke/
+
+# processos locais
+/dashboard.pid
+/dashboard.log
+/thermal_guard.log
+/thermal_guard.pid
+
+# relatórios de auditoria internos
+quality_reports/
+code/
+.DS_Store
+
+# decisões de arquitetura e de produto (ADR, PRD, specs, planejamento): ficam fora do repositório
+adr/
+adrs/
+docs/adr/
+docs/decisions/
+decisions/
+prd/
+docs/prd/
+.planning/
+**/ADR*.md
+**/adr*.md
+**/PRD*.md
+**/prd*.md
+**/*-adr.md
+**/*-prd.md
+**/*decis*.md
+**/*DECIS*.md

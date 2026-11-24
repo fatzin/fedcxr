@@ -1,0 +1,222 @@
+{
+  "label_stats": {
+    "clients": [
+      {
+        "client": 0,
+        "n": 471,
+        "counts": [
+          127,
+          228,
+          116
+        ],
+        "kl": 0.00039496836568707686
+      },
+      {
+        "client": 1,
+        "n": 471,
+        "counts": [
+          124,
+          230,
+          117
+        ],
+        "kl": 0.00015998995082139658
+      },
+      {
+        "client": 2,
+        "n": 471,
+        "counts": [
+          112,
+          244,
+          115
+        ],
+        "kl": 0.002315370512221023
+      },
+      {
+        "client": 3,
+        "n": 471,
+        "counts": [
+          134,
+          228,
+          109
+        ],
+        "kl": 0.0024175398488352276
+      },
+      {
+        "client": 4,
+        "n": 471,
+        "counts": [
+          126,
+          219,
+          126
+        ],
+        "kl": 0.0007905189902085389
+      },
+      {
+        "client": 5,
+        "n": 471,
+        "counts": [
+          114,
+          228,
+          129
+        ],
+        "kl": 0.0011912059840303614
+      },
+      {
+        "client": 6,
+        "n": 470,
+        "counts": [
+          106,
+          236,
+          128
+        ],
+        "kl": 0.0031103991584040813
+      },
+      {
+        "client": 7,
+        "n": 470,
+        "counts": [
+          123,
+          241,
+          106
+        ],
+        "kl": 0.002705235694861318
+      },
+      {
+        "client": 8,
+        "n": 470,
+        "counts": [
+          126,
+          225,
+          119
+        ],
+        "kl": 0.00020217536984682262
+      },
+      {
+        "client": 9,
+        "n": 470,
+        "counts": [
+          128,
+          202,
+          140
+        ],
+        "kl": 0.00680308817795388
+      }
+    ],
+    "kl_mean": 0.0020090492052869725,
+    "kl_max": 0.00680308817795388,
+    "p_global": [
+      0.2592435189120272,
+      0.48470038249043773,
+      0.2560560985975351
+    ]
+  },
+  "profiles": [
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": 0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": 0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": -0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": -0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": -0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": 0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": -0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": 0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": 0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    },
+    {
+      "downsample": 1.0,
+      "blur_sigma": 0.0,
+      "gamma": 1.0,
+      "contrast": 1.0,
+      "brightness": -0.0,
+      "clahe": false,
+      "noise_std": 0.0
+    }
+  ],
+  "dataset": {
+    "train": {
+      "normal": 1220,
+      "bacteria": 2281,
+      "virus": 1205
+    },
+    "val": {
+      "normal": 129,
+      "bacteria": 257,
+      "virus": 140
+    },
+    "test": {
+      "normal": 234,
+      "bacteria": 242,
+      "virus": 148
+    }
+  }
+}

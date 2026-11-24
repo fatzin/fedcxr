@@ -1,0 +1,14 @@
+[
+  {
+    "method": "scaffold-full",
+    "heterogeneity": "\u03b1=0.1",
+    "n_seeds": 3,
+    "rounds_to_target": {},
+    "bytes_to_target": {},
+    "test_bacc": [
+      0.3333333333333333,
+      0.7627266490902854,
+      0.3333333333333333
+    ]
+  }
+]

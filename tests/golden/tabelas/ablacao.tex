@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Análises adicionais com $\alpha=0{,}1$ (e IID para o posto do LoRA). Mesmas \textit{seeds} e partições da grade principal. n.a.: nenhuma execução atingiu o alvo.}
+\label{tab:ablacao}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llcrrc}
+\toprule
+Variante & Partição & \textit{Seeds} & $R$ & $C_{total}$ (GB) & BACC teste \\
+\midrule
+FedProx $\mu=0{,}001$ & $\alpha=0{,}1$ & 5 & 28{,}6\,$\pm$\,9{,}9 & 49{,}6\,$\pm$\,17{,}2 & 0{,}716\,$\pm$\,0{,}078 \\
+FedProx $\mu=0{,}01$ (princ.) & $\alpha=0{,}1$ & 5 & 29{,}6\,$\pm$\,7{,}9 & 51{,}3\,$\pm$\,13{,}7 & 0{,}763\,$\pm$\,0{,}035 \\
+FedProx $\mu=0{,}1$ & $\alpha=0{,}1$ & 5 & 32{,}2\,$\pm$\,8{,}3 & 55{,}8\,$\pm$\,14{,}5 & 0{,}743\,$\pm$\,0{,}053 \\
+\midrule
+SCAFFOLD $\eta=0{,}003$ (princ.) & $\alpha=0{,}1$ & 5 & n.a. & n.a. & 0{,}440\,$\pm$\,0{,}147 \\
+SCAFFOLD $\eta=0{,}001$ & $\alpha=0{,}1$ & 3 & 99{,}0$^{\dagger2}$ & 343{,}4$^{\dagger2}$ & 0{,}476\,$\pm$\,0{,}248 \\
+\midrule
+LoRA $r=4$ & IID & 3 & 8{,}0\,$\pm$\,2{,}0 & 0{,}07\,$\pm$\,0{,}02 & 0{,}799\,$\pm$\,0{,}008 \\
+LoRA $r=8$ (princ.) & IID & 3 & 7{,}0\,$\pm$\,1{,}0 & 0{,}13\,$\pm$\,0{,}02 & 0{,}789\,$\pm$\,0{,}020 \\
+LoRA $r=16$ & IID & 3 & 9{,}0\,$\pm$\,1{,}0 & 0{,}32\,$\pm$\,0{,}04 & 0{,}787\,$\pm$\,0{,}007 \\
+LoRA $r=4$ & $\alpha=0{,}1$ & 5 & 41{,}3\,$\pm$\,37{,}1$^{\dagger2}$ & 0{,}38\,$\pm$\,0{,}34$^{\dagger2}$ & 0{,}650\,$\pm$\,0{,}127 \\
+LoRA $r=8$ (princ.) & $\alpha=0{,}1$ & 5 & 32{,}2\,$\pm$\,18{,}0$^{\dagger1}$ & 0{,}58\,$\pm$\,0{,}33$^{\dagger1}$ & 0{,}715\,$\pm$\,0{,}065 \\
+LoRA $r=16$ & $\alpha=0{,}1$ & 5 & 38{,}6\,$\pm$\,22{,}9 & 1{,}38\,$\pm$\,0{,}82 & 0{,}666\,$\pm$\,0{,}082 \\
+\bottomrule
+\end{tabular}}
+\end{table}

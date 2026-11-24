@@ -1,0 +1,14 @@
+{
+  "pid": 14,
+  "gpu": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "pci_bus_id": "00000000:8C:00.0"
+  },
+  "started": 1795377365.2355015,
+  "rounds": 100,
+  "n_train": 4706,
+  "lr": 0.003,
+  "method": "scaffold",
+  "peft": "full",
+  "num_clients": 10
+}

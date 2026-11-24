@@ -1,0 +1,46 @@
+{
+  "run": "fedavg-lora_iid_sev0.5_harm_cleaneval_s2",
+  "device": "cuda",
+  "params": {
+    "total": 21888003,
+    "trainable": 222339
+  },
+  "message_bytes": {
+    "down": 904333,
+    "up": 904333,
+    "raw_down": 889356,
+    "raw_up": 889356
+  },
+  "extra_down_bytes": 26010,
+  "client_sizes": [
+    471,
+    471,
+    471,
+    471,
+    471,
+    471,
+    470,
+    470,
+    470,
+    470
+  ],
+  "kl_mean": 0.003044096454009256,
+  "kl_max": 0.009894475573478001,
+  "rounds_run": 100,
+  "target": null,
+  "rounds_to_target": null,
+  "total_bytes": 1808692010,
+  "test": {
+    "bacc": 0.7573025982116892,
+    "acc": 0.7868589743589743,
+    "f1_macro": 0.7598052932179074,
+    "f1_per_class": [
+      0.8376470588235294,
+      0.8424908424908425,
+      0.5992779783393501
+    ],
+    "auc_macro": 0.943250808512682
+  },
+  "test_loss": 0.5419120192527771,
+  "wall_sec": 1037.8
+}

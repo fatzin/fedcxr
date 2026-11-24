@@ -1,0 +1,46 @@
+{
+  "run": "fedprox-full_dir0.5_sev0.0_s2",
+  "device": "cuda",
+  "params": {
+    "total": 21666819,
+    "trainable": 21666819
+  },
+  "message_bytes": {
+    "down": 86712399,
+    "up": 86712399,
+    "raw_down": 86667276,
+    "raw_up": 86667276
+  },
+  "extra_down_bytes": 0,
+  "client_sizes": [
+    727,
+    145,
+    773,
+    534,
+    979,
+    27,
+    55,
+    524,
+    844,
+    98
+  ],
+  "kl_mean": 0.34691035842535956,
+  "kl_max": 0.5144870136520919,
+  "rounds_run": 100,
+  "target": null,
+  "rounds_to_target": null,
+  "total_bytes": 173424798000,
+  "test": {
+    "bacc": 0.7763769809224356,
+    "acc": 0.7900641025641025,
+    "f1_macro": 0.7731717377627193,
+    "f1_per_class": [
+      0.788659793814433,
+      0.8509874326750448,
+      0.6798679867986799
+    ],
+    "auc_macro": 0.9418520779820397
+  },
+  "test_loss": 0.936445951461792,
+  "wall_sec": 1553.8
+}

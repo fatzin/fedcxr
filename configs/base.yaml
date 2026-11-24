@@ -1,0 +1,51 @@
+# Configuração base. Qualquer campo pode ser sobrescrito na linha de comando:
+#   python -m fedcxr.train --config configs/base.yaml --set fl.method=fedprox partition.alpha=0.1
+seed: 0
+
+data:
+  path: data/prepared/kermany.pt
+  synthetic: false        # true gera imagens aleatórias para teste rápido, sem baixar nada
+
+partition:
+  num_clients: 10
+  scheme: dirichlet       # iid | dirichlet
+  alpha: 0.5              # só vale para dirichlet; menor = mais heterogêneo
+  min_size: 20            # tamanho mínimo de cada cliente (reamostra até atingir)
+
+acquisition:              # heterogeneidade de aquisição simulada (feature skew), H3
+  severity: 0.0           # 0 = desligado; 1 = perfis de aquisição mais distantes
+  harmonize: false        # histogram matching local para um CDF de referência público
+  ref_images: 200         # imagens usadas para montar o CDF de referência
+  eval_profiles: true     # false = validação e teste sem perfil de aquisição (só o treino é distorcido)
+
+model:
+  name: vit_small_patch16_224.augreg_in21k_ft_in1k
+  pretrained: true
+  peft: full              # full | lora
+  lora_r: 8
+  lora_alpha: 16
+  lora_targets: [attn.qkv, attn.proj]
+
+fl:
+  method: fedavg          # fedavg | fedprox | scaffold
+  rounds: 100
+  participation: 1.0      # fração de clientes por rodada
+  local_epochs: 1
+  batch_size: 32
+  lr: 0.01
+  momentum: 0.0           # 0 mantém a correção do SCAFFOLD exata
+  weight_decay: 0.0
+  mu: 0.01                # termo proximal do FedProx
+  server_lr: 1.0          # SCAFFOLD
+  scaffold_variant: orig  # orig ("principal" no artigo) | cweighted | uniform | clip; ver fedcxr/fl.py
+  early_stop_target: null # acurácia balanceada de validação; null = roda todas as rodadas
+
+eval:
+  test_every: 10
+  batch_size: 256
+
+train:
+  amp: bf16               # bf16 | fp16 | none
+  out_dir: runs
+  save_model: true        # grava <out_dir>/<execução>/final_state.pt
+  run_name: null          # null = nome automático

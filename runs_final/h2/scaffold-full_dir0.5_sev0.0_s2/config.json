@@ -1,0 +1,52 @@
+{
+  "seed": 2,
+  "data": {
+    "path": "/vol/data/prepared/kermany.pt",
+    "synthetic": false
+  },
+  "partition": {
+    "num_clients": 10,
+    "scheme": "dirichlet",
+    "alpha": 0.5,
+    "min_size": 20
+  },
+  "acquisition": {
+    "severity": 0.0,
+    "harmonize": false,
+    "ref_images": 200
+  },
+  "model": {
+    "name": "vit_small_patch16_224.augreg_in21k_ft_in1k",
+    "pretrained": true,
+    "peft": "full",
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_targets": [
+      "attn.qkv",
+      "attn.proj"
+    ]
+  },
+  "fl": {
+    "method": "scaffold",
+    "rounds": 100,
+    "participation": 1.0,
+    "local_epochs": 1,
+    "batch_size": 32,
+    "lr": 0.003,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "mu": 0.01,
+    "server_lr": 1.0,
+    "early_stop_target": null
+  },
+  "eval": {
+    "test_every": 10,
+    "batch_size": 256
+  },
+  "train": {
+    "amp": "bf16",
+    "out_dir": "/vol/runs/h2",
+    "save_model": true,
+    "run_name": null
+  }
+}
