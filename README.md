@@ -166,9 +166,10 @@ Para refazer tudo do zero, rode a grade `paper` num dos três modos e aponte `--
 A soma das durações das 199 execuções é de 66 horas (de 8 a 28 minutos cada). Como várias rodam ao
 mesmo tempo na mesma GPU, o tempo de relógio fica bem menor. A grade `h2` sozinha soma 24 horas.
 
-As seeds fixam partição, perfis de aquisição, inicialização e ordem dos lotes. Na CPU, a mesma seed dá
-os mesmos números (é o que `test_training.py` confere). Na GPU, o modo determinístico do PyTorch fica
-desligado e o treino usa bf16, então rodar de novo pode dar diferenças nas últimas casas decimais.
+As seeds fixam a partição, os perfis de aquisição, a inicialização e a ordem dos lotes. Com o mesmo hardware e
+software, a mesma seed dá curvas idênticas: as execuções repetidas entre duas grades do artigo saíram iguais
+bit a bit, mesmo rodando em máquinas diferentes com o mesmo modelo de GPU. Em outra GPU ou outra versão do
+PyTorch, os números podem mudar nas últimas casas decimais. Na CPU, `test_training.py` confere isso a cada execução.
 
 ## Dashboard
 
